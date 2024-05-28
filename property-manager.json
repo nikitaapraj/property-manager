@@ -1,0 +1,92 @@
+{
+  "properties": [
+      {
+          "building_type": "Highrise Office",
+          "building_name": "100 Park Place",
+          "address_line_1": "100 Park Place Dr",
+          "address_line_2": "Suite 400",
+          "address_line_3": "Atlanta, GA 30303",
+          "is_occupied": "Y",
+          "tenant_name": "Morgan & Morgan",
+          "sq_footage": "10000",
+          "monthly_rent": "$20000",
+          "id": 1,
+          "owner_id": 2,
+          "manager_id": 1
+      },
+      {
+          "building_type": "Highrise Office",
+          "building_name": "Westside Tower",
+          "address_line_1": "5500 Marietta Street",
+          "address_line_2": "Suite 900",
+          "address_line_3": "Atlanta, GA 30303",
+          "is_occupied": "Y",
+          "tenant_name": "Westside Insurance",
+          "sq_footage": "40000",
+          "monthly_rent": "$15000",
+          "id": 2,
+          "owner_id": 3,
+          "manager_id": 4
+      },
+      {
+          "building_type": "Office Park",
+          "building_name": "Oak Ridge Parkway Building 200",
+          "address_line_1": "1000 Oak Ridge Parkway Bldg 200",
+          "address_line_2": "Ste 100",
+          "address_line_3": "Norcross GA 30071",
+          "is_occupied": "N",
+          "tenant_name": "N/A",
+          "sq_footage": "10000",
+          "monthly_rent": "$18000",
+          "id": 3,
+          "owner_id": 5,
+          "manager_id": 4
+      },
+      {
+          "building_type": "Midrise Office",
+          "building_name": "Technology Park",
+          "address_line_1": "1000 Technology Park Drive",
+          "address_line_2": "Suite 300",
+          "address_line_3": "Duluth GA 30036",
+          "is_occupied": "Y",
+          "tenant_name": "Sky Cloud Storage Inc.",
+          "sq_footage": "15000",
+          "monthly_rent": "$12000",
+          "id": 4,
+          "owner_id": 3,
+          "manager_id": 1
+      }
+  ],
+  "users": [
+      {
+          "id": 1,
+          "username": "jane.smith",
+          "role": "manager",
+          "permissions": "crud"
+      },
+      {
+          "id": 2,
+          "username": "sam.jones",
+          "role": "owner",
+          "permissions": "read-only"
+      },
+      {
+          "id": 3,
+          "username": "christie.williams",
+          "role": "owner",
+          "permissions": "read-only"
+      },
+      {
+          "id": 4,
+          "username": "patrick.johnson",
+          "role": "manager",
+          "permissions": "crud"
+      },
+      {
+          "id": 5,
+          "username": "taylor.brown",
+          "role": "owner",
+          "permissions": "read-only"
+      }
+  ]
+}

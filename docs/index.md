@@ -26,8 +26,8 @@ Implementing the Real Estate Real Data API is fast and easy. Try it out: [Create
 
 ### API reference docs
 
-* [`properties`](/docs/properties.md)
-* [`users`](/docs/users.md)
+* [`properties`](/properties.md)
+* [`users`](/users.md)
 
 ### Properties Tutorials
 

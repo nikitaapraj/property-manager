@@ -20,7 +20,7 @@ Contains information about a user. A user can be either an owner or manager of a
 ## Properties
 
 | Property name | Type | Description |
-| --- | ---- | --- |
+
 | `id` | integer | Unique identifier of the user |
 | `username` | string | Unique alphanumeric username of the user. Minimum length 6 characters. Maximum length 10 characters. Cannot include special characters. |
 | `role` | string | Relation of the user with the property. Can be either `manager` or `owner`. |

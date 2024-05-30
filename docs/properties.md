@@ -28,7 +28,7 @@ Contains information about a real estate property.
 ## Properties
 
 | Property name | Type | Description |
-| --- | ---- | --- |
+
 | `building_type` | string | Type of the property based on its structure and use. For example, `Highrise Office`. |
 | `building_name` |string | Name of the property |
 | `address_line_1` | string | Street name in the property's address |

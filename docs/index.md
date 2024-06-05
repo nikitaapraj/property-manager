@@ -20,7 +20,7 @@ The following are a few example use cases where this API can be used:
 
 ## Get started
 
-Implementing the Real Estate Real Data API is fast and easy. Try it out: [Create a property](/docs/create-property.md).
+Implementing the Real Estate Real Data API is fast and easy. Try it out: [Create a property](/create-property.md).
 
 ## Learn more
 
@@ -31,14 +31,14 @@ Implementing the Real Estate Real Data API is fast and easy. Try it out: [Create
 
 ### Properties Tutorials
 
-* [Create a property](/docs/create-property.md)
-* [Find a property](/docs/get-property.md)
-* [Update a property](/docs/update-property.md)
-* [Delete a property](/docs/delete-property.md)
+* [Create a property](/create-property.md)
+* [Find a property by owner](/get-property-by-owner.md)
+* [Update a property](/update-property.md)
+* [Delete a property](/delete-property.md)
 
 ### Users Tutorials
 
-* [Create a user](/docs/create-user.md)
-* [Find a user](/docs/get-user.md)
-* [Update a user information and access](/docs/update-user.md)
-* [Delete a user](/docs/delete-user.md)
+* [Create a user](/create-user.md)
+* [Find a user](/get-user.md)
+* [Update a user information and access](/update-user.md)
+* [Delete a user](/delete-user.md)

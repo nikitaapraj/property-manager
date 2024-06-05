@@ -19,6 +19,7 @@ You must be a `manager` with `CRUD` access. If you don't have the access, see [U
 3. In the **Headers** section, ensure **content-type** is `application/json`.
 
 4. In the **Body** section, select `raw` and then enter the updated property details in the text field. The following property details are required:
+
     | Property name | Type | Description |
     |-------|--------|---------|
     | `id` | integer | Unique identifier of the property |

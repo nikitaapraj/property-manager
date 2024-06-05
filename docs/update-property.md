@@ -14,7 +14,7 @@ Update information about a property, such as tenant or rent.
 
 2. Create a `PUT` request for the property you want to update.
 
-    ```json
+    ```
     {base_url}/properties/{id}
     ```
 
@@ -29,7 +29,7 @@ Update information about a property, such as tenant or rent.
 
 This example changes the occupancy status of property `3` from `Yes` to `No`.
 
-```json
+```
 {base_url}/properties/3
 ```
 

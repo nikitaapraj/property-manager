@@ -16,20 +16,21 @@ Learn how to start the Real Estate Real Data API, and create users and propertie
 
 2. In **Command Prompt**, change directory to API.
     
-    ```cli
+    ```
     cd api
     ```
 
 3. In the API directory, open the database file.
 
-    ```cli
+    ```
     json-server -w property-manager.json
     ```
 
     The json server starts on a local port. Note the index. This is your base URL.
 
     **Example response**
-    ```cli
+
+    ```
     Index:
     http://localhost:3000/
 
@@ -37,6 +38,7 @@ Learn how to start the Real Estate Real Data API, and create users and propertie
     http://localhost:3000/properties
     http://localhost:3000/users
     ```
+
 The service is now started.
 
 ## Create users
@@ -44,12 +46,13 @@ The service is now started.
 Create an `owner` or `manager` user and assign them `read-only` or `CRUD` permissions.
 
 1. Open the **Postman** app and create a `POST` request.
-    ```json
+    ```
     {base_url}/users/
     ```
+
 2. In the **Headers** section, ensure **content-type** is `application/json`.
 
-3. In the **Body** section, select `raw`.
+3. In the **Body** section, select **raw**.
 
 4. In the **Body text** field, enter the properties and values for the `manager` user. See [Users](/users.md).
 
@@ -75,6 +78,7 @@ http://localhost:3000/users
     "permissions": "crud"
 }
 ```
+
 #### Response
 
 ```json
@@ -91,12 +95,13 @@ http://localhost:3000/users
 Add a property to your portfolio.
 
 1. In the **Postman** app, create a `POST` request.
-    ```json
+    ```
     {base_url}/properties/
     ```
+
 2. In the **Headers** section, ensure **content-type** is `application/json`.
 
-3. In the **Body** section, select `raw`.
+3. In the **Body** section, select **raw**.
 
 4. In the **Body text** field, enter the property details. See [Properties](/properties.md).
 
@@ -137,11 +142,12 @@ http://localhost:3000/properties
     "manager_id": 8
 }
 ```
+
 ## Next steps
 
-* [Update a property](/docs/update-property.md)
-* [Delete a property](/docs/delete-property.md)
-* [Find a property](/docs/get-property-by-owner.md)
-* [Update a user](/docs/update-user.md)
-* [Delete a user](/docs/delete-user.md)
-* [Find a user](/docs/get-user.md)
+* [Update a property](update-property.md)
+* [Delete a property](delete-property.md)
+* [Find a property](/get-property-by-owner.md)
+* [Update a user](/update-user.md)
+* [Delete a user](/delete-user.md)
+* [Find a user](/get-user.md)

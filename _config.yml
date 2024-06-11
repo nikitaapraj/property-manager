@@ -1,0 +1,19 @@
+remote_theme: pages-themes/minimal@v0.2.0
+
+title: Real Estate Real Data
+description: All your real estate under one roof
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+  - jekyll-sass-converter
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-coffeescript
+  - jekyll-admin
+

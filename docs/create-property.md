@@ -2,43 +2,32 @@
 
 Add a property to your portfolio.
 
-## Before you begin
+## URL
 
-You must be a `manager` with `CRUD` access. If you don't have the access, see [Update a user information and access](/docs/update-user.md).
+**POST** `{base_url}/properties/`
 
-## Create a property
+## Parameters
 
-1. Open the Postman app on your desktop.
-
-2. Create a `POST` request.
-
-    ```
-    {base_url}/properties/
-    ```
-
-3. In the **Headers** section, ensure **content-type** is `application/json`.
-
-4. In the **Body** section, select `raw` and then enter the updated property details in the text field. The following property details are required:
-
-    | Property name | Type | Description |
-    |-------|--------|---------|
-    | `id` | integer | Unique identifier of the property |
-    | `building_name` |string | Name of the property |
-    | `address_line_1` | string | Street name in the property's address |
-    | `address_line_2` | string | Suite or apartment number of the property |
-    | `address_line_3` | string | City, state, and zip code in the property's address |
-    | `owner_id` | integer | Unique identifier of the owner of the property |
-    | `manager_id` | integer | Unique identifier of the manager of the property |
-
-5. Click **Send**. A property is created and it appears in the **Response Body** section.
+| Property name | Type | Required | Description |
+|-------|--------|---------|---------|
+| `building_type` | string | Optional | Type of the property based on its structure and use. For example, `High-rise Office`. |
+| `building_name` |string | Required | Name of the property |
+| `address_line_1` | string | Required | Street name in the property's address |
+| `address_line_2` | string | Required | Suite or apartment number of the property. |
+| `address_line_3` | string | Required | City, state, and zip code in the property's address. |
+| `is_occupied` | boolean | Optional | `Y` if the property is occupied by a tenant. `N` if it's empty. |
+| `tenant_name` | string | Optional | If the property is occupied, the name of the tenant. Optional if the property is unoccupied. |
+| `sq_footage` | string |  Optional | Area of the property in square feet |
+| `monthly_rent` | string |  Optional | Monthly rent of the property in USD |
+| `id` | integer | Required | Unique identifier of the property |
+| `owner_id` | integer | Required | Unique identifier of the owner of the property |
+| `manager_id` | integer | Required | Unique identifier of the manager of the property |
 
 ## Example
 
 ### Request
 
-```
-{base_url}/properties
-```
+`http://localhost:3000//properties`
 
 ```json
 {

@@ -28,7 +28,7 @@ Contains information about a user. A user can be either an owner or manager of a
 
 ## Operations
 
-* [Create a user](/docs/create-user.md)
-* [Find a user](/docs/get-user.md)
-* [Update a user information and access](/docs/update-user.md)
-* [Delete a user](/docs/delete-user.md)
+* [Create a user](/create-user.md)
+* [Find a user](/get-user.md)
+* [Update a user information and access](/update-user.md)
+* [Delete a user](/delete-user.md)

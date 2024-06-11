@@ -24,19 +24,19 @@ Implementing the Real Estate Real Data API is fast and easy. [Get started with t
 
 ## Learn more
 
-### API reference docs
+### Endpoints reference
 
 * [`properties`](/properties.md)
 * [`users`](/users.md)
 
-### Properties Tutorials
+### Properties reference
 
 * [Create a property](/create-property.md)
 * [Find a property by owner](/get-property-by-owner.md)
 * [Update a property](/update-property.md)
 * [Delete a property](/delete-property.md)
 
-### Users Tutorials
+### Users reference
 
 * [Create a user](/create-user.md)
 * [Find a user](/get-user.md)

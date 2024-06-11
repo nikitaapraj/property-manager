@@ -1,19 +1,42 @@
 # Create a user
 
-Create an `owner` or `manager` user and assign them `read-only` or `CRUD` permissions.
+Create an `owner` or `manager` user and assign them permissions.
 
-## Create a user
+## URL
 
-1. Open the Postman app on your desktop.
+**POST** `{base_url}/users/`
 
-2. Create a `POST` request.
+## Parameters
 
-    ```
-    {base_url}/users/
-    ```
+| Property name | Type | Required | Description |
+|-------|--------|---------|---------|
+| `id` | integer |Required| Unique identifier of the user |
+| `username` | string | Required | Unique alphanumeric username of the user. Minimum length 6 characters. Maximum length 10 characters. Cannot include special characters. |
+| `role` | string | Required | Relation of the user with the property. Can be either `manager` or `owner`. |
+| `permissions` | string | Required |Access level of the user. A `manager` must have the `crud` access. An `owner` must have the `read-only` access. |
 
-3. In the **Headers** section, ensure **content-type** is `application/json`.
+## Example
 
-4. In the **Body** section, select `raw` and then enter the properties and values in the text field. See the [Users properties](/users.md). All properties are required.
+### Request
 
+`http://localhost:3000/users/`
 
+```json
+{
+    "id": "4",
+    "username": "patrick.johnson",
+    "role": "manager",
+    "permissions": "crud"
+}
+```
+
+### Response
+
+```json
+{
+    "id": "4",
+    "username": "patrick.johnson",
+    "role": "manager",
+    "permissions": "crud"
+}
+```

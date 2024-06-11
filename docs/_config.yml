@@ -17,3 +17,5 @@ plugins:
   - jekyll-coffeescript
   - jekyll-admin
 
+url: "https://nikitaapraj.github.io"
+baseurl: "/property-manager"

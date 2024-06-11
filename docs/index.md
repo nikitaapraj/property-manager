@@ -4,11 +4,11 @@ Real Estate Real Data is a REST API for managing real estate portfolios. It's a 
 
 ## Overview
 
-This API consists of two resources: `properties` and `users`. 
+This API is currently available as a local API. It consists of two resources: `properties` and `users`.
 
-The `properties` resource includes information such as property type, location, area, rental income, and occupancy. 
+The `properties` resource includes information such as property type, location, area, rental income, and occupancy.
 
-The `users` resource includes owners and managers managing the property. Depending on their type, they have full or read-only access to the properties. Users with full access can create, read, update, and delete a property. Users with read-only access can view their properties but they can't add, delete, or update them. 
+The `users` resource includes owners and managers managing the property. Depending on their type, they have full or read-only access to the properties. Users with full access can create, read, update, and delete a property. Users with read-only access can view their properties but they can't add, delete, or update them.
 
 ## Use cases
 
@@ -20,7 +20,7 @@ The following are a few example use cases where this API can be used:
 
 ## Get started
 
-Implementing the Real Estate Real Data API is fast and easy. [Try it out](/docs/get-started.md).
+Implementing the Real Estate Real Data API is fast and easy. [Try it out](/get-started.md).
 
 ## Learn more
 

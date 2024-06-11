@@ -20,7 +20,7 @@ The following are a few example use cases where this API can be used:
 
 ## Get started
 
-Implementing the Real Estate Real Data API is fast and easy. [Try it out](/get-started.md).
+Implementing the Real Estate Real Data API is fast and easy. [Get started with the API](/get-started.md).
 
 ## Learn more
 

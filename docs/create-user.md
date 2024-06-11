@@ -19,7 +19,9 @@ Create an `owner` or `manager` user and assign them permissions.
 
 ### Request
 
-`http://localhost:3000/users/`
+```
+http://localhost:3000/users/
+```
 
 ```json
 {

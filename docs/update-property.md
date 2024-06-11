@@ -2,40 +2,38 @@
 
 Update information about a property, such as tenant or rent.
 
-## Before you begin
+## URL
 
-* You must be a `manager` with `CRUD` access. If you don't have the access, see [Update a user information and access](/docs/update-user.md).
+**POST** `{base_url}/properties/{id}`
 
-* Keep the property id handy.
+## Parameters
 
-## Update a property
-
-1. Open the Postman app on your desktop.
-
-2. Create a `PUT` request for the property you want to update.
-
-    ```
-    {base_url}/properties/{id}
-    ```
-
-3. In the **Headers** section, ensure **content-type** is `application/json`.
-
-4. In the **Body** section, select `raw` and then enter the updated property details in the text field. See [Properties Reference](/docs/properties.md).
-5. Click **Send**. The updated property details appear in the **Response Body** section.
+| Property name | Type | Required | Description |
+|-------|--------|---------|---------|
+| `building_type` | string | Optional | Type of the property based on its structure and use. For example, `High-rise Office`. |
+| `building_name` |string | Required | Name of the property |
+| `address_line_1` | string | Required | Street name in the property's address |
+| `address_line_2` | string | Required | Suite or apartment number of the property. |
+| `address_line_3` | string | Required | City, state, and zip code in the property's address. |
+| `is_occupied` | boolean | Optional | `Y` if the property is occupied by a tenant. `N` if it's empty. |
+| `tenant_name` | string | Optional | If the property is occupied, the name of the tenant. Optional if the property is unoccupied. |
+| `sq_footage` | string |  Optional | Area of the property in square feet |
+| `monthly_rent` | string |  Optional | Monthly rent of the property in USD |
+| `id` | integer | Required | Unique identifier of the property |
+| `owner_id` | integer | Required | Unique identifier of the owner of the property |
+| `manager_id` | integer | Required | Unique identifier of the manager of the property |
 
 ## Example
 
 ### Request
 
-This example changes the occupancy status of property `3` from `Yes` to `No`.
+This example changes the occupancy status of property `3` from `Y` to `N`.
 
-```
-{base_url}/properties/3
-```
+`http://localhost:3000//properties/3`
 
 ```json
 {
-    "building_type": "Highrise Office",
+    "building_type": "High-rise Office",
     "building_name": "100 Park Place",
     "address_line_1": "100 Park Place Dr",
     "address_line_2": "Suite 400",
@@ -54,7 +52,7 @@ This example changes the occupancy status of property `3` from `Yes` to `No`.
 
 ```json
 {
-    "building_type": "Highrise Office",
+    "building_type": "High-rise Office",
     "building_name": "100 Park Place",
     "address_line_1": "100 Park Place Dr",
     "address_line_2": "Suite 400",

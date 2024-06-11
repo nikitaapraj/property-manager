@@ -1,7 +1,5 @@
-remote_theme: pages-themes/minimal@v0.2.0
+theme: jekyll-theme-minimal
 
 title: Real Estate Real Data
 description: All your real estate under one roof
 
-url: "https://nikitaapraj.github.io"
-baseurl: "/property-manager"

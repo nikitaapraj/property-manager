@@ -25,11 +25,13 @@ Update information about a property, such as tenant or rent.
 
 ## Example
 
-### Request
-
 This example changes the occupancy status of property `3` from `Y` to `N`.
 
-`http://localhost:3000//properties/3`
+### Request
+
+```
+http://localhost:3000//properties/3
+```
 
 ```json
 {

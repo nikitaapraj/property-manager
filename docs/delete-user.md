@@ -14,7 +14,9 @@ Delete a user from the database.
 
 ### Request
 
-`http://localhost:3000//users/3`
+```
+http://localhost:3000//users/3
+```
 
 ### Response
 

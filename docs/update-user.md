@@ -18,11 +18,13 @@ A user's `username` and `id` are not changeable. If you want to change these val
 
 ## Example
 
-### Request
-
 This example changes the role of user `3` from `manager` to `owner` and permissions from `crud` to `read-only`.
 
-`http://localhost:3000//user/3`
+### Request
+
+```
+http://localhost:3000//user/3
+```
 
 ```json
 {

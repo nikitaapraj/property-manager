@@ -8,11 +8,34 @@
 * The current version of [json-server](https://www.npmjs.com/package/json-server)
 * A fork of this repo. Ensure it includes the [database file](/api/property-manager.json).
 
-## Set up the service
+## Start the service
 
-* Open the fork in **Command Prompt**. In **GitHub Desktop**, switch to the fork. Go to **Repositories** > **Open in Command Prompt**.
+1. Open the fork in **Command Prompt**. In **GitHub Desktop**, switch to the fork. Go to **Repositories** > **Open in Command Prompt**.
 
-* In  
+2. In **Command Prompt**, change directory to API.
+    
+    ```cli
+    cd api
+    ```
+
+3. In the API directory, open the database file.
+
+    ```cli
+    json-server -w property-manager.json
+    ```
+
+    The json server starts on a local port. Note the index. This is your base URL.
+
+    **Example response**
+    ```cli
+    Index:
+    http://localhost:3000/
+
+    Endpoints:
+    http://localhost:3000/properties
+    http://localhost:3000/users
+    ```
+The service is now started.
 
 ## Create users
 

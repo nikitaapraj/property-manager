@@ -4,17 +4,19 @@ Get a list of all properties a person owns.
 
 ## URL
 
-**GET** `{base_url}/properties?owner_id={owner_id}`
+**GET** `{base_url}/properties?owner_id={id}`
 
 ## Parameters
 
-`owner_id`: Unique identifier of the owner of the property
+`id`: Unique identifier of the owner of the property
 
 ## Example
 
 ### Request
 
-`{base_url}/properties?owner_id=2`
+```
+http://localhost:3000//properties?owner_id=2
+```
 
 ### Response
 

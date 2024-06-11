@@ -1,6 +1,6 @@
 # Get a user
 
-Find a user using by their user id.
+Find a user by their user id.
 
 ## URL
 
@@ -14,13 +14,17 @@ Find a user using by their user id.
 
 ### Request
 
-`http://localhost:3000//users/2`
+```
+http://localhost:3000//users/2
+```
 
 ### Response
 
+```
 {
     "id": 2,
     "username": "sam.jones",
     "role": "owner",
     "permissions": "read-only"
 }
+```

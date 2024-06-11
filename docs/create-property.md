@@ -27,7 +27,9 @@ Add a property to your portfolio.
 
 ### Request
 
-`http://localhost:3000//properties`
+```
+http://localhost:3000//properties
+```
 
 ```json
 {

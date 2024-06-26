@@ -15,7 +15,7 @@ Find a user by their user id.
 ### Request
 
 ```
-http://localhost:3000//users/2
+http://localhost:3000/users/2
 ```
 
 ### Response

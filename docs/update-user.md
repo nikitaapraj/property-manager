@@ -23,15 +23,15 @@ This example changes the role of user `3` from `manager` to `owner` and permissi
 ### Request
 
 ```
-http://localhost:3000//user/3
+http://localhost:3000/user/3
 ```
 
 ```json
 {
     "id": 3,
     "username": "christie.williams",
-    "role": "owner",
-    "permissions": "read-only"
+    "role": "manager",
+    "permissions": "crud"
 }
 ```
 

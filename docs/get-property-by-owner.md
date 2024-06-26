@@ -15,7 +15,7 @@ Get a list of all properties a person owns.
 ### Request
 
 ```
-http://localhost:3000//properties?owner_id=2
+http://localhost:3000/properties?owner_id=2
 ```
 
 ### Response

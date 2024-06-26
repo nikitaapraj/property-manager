@@ -30,7 +30,7 @@ This example changes the occupancy status of property `3` from `Y` to `N`.
 ### Request
 
 ```
-http://localhost:3000//properties/3
+http://localhost:3000/properties/3
 ```
 
 ```json
@@ -40,7 +40,7 @@ http://localhost:3000//properties/3
     "address_line_1": "100 Park Place Dr",
     "address_line_2": "Suite 400",
     "address_line_3": "Atlanta, GA 30303",
-    "is_occupied": "N",
+    "is_occupied": "Y",
     "tenant_name": "Morgan & Morgan",
     "sq_footage": "10000",
     "monthly_rent": "$20000",
@@ -60,9 +60,6 @@ http://localhost:3000//properties/3
     "address_line_2": "Suite 400",
     "address_line_3": "Atlanta, GA 30303",
     "is_occupied": "N",
-    "tenant_name": "Morgan & Morgan",
-    "sq_footage": "10000",
-    "monthly_rent": "$20000",
     "id": "1",
     "owner_id": 2,
     "manager_id": 1

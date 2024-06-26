@@ -15,7 +15,7 @@ Delete a property from the portfolio.
 ### Request
 
 ```
-http://localhost:3000//properties/3
+http://localhost:3000/properties/3
 ```
 
 ### Response

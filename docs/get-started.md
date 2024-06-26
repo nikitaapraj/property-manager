@@ -1,6 +1,6 @@
 # Get started
 
-Learn how to start the Real Estate Real Data API, and create users and properties.
+Learn how to start the Real Estate Real Data API, and create users and properties. These instructions are for Windows.
 
 ## System requirements
 
